@@ -13,7 +13,7 @@
 <h1 id="intro">File Search</h1>
 
 ## brief
-- Searching the folder upto two levels deep
+- Search for files for a given path up to 3 levels deep of your choice.
 
 
 ## Task:
@@ -62,12 +62,12 @@ To get this project up and running locally, you must already have python plus th
 **simple steps to set up on your local machine**
 
 ```
-- $ git clone `$ git clone https://github.com/symonkipkemei/ceaser-cipher.git`
+- $ git clone `$ git clone https://github.com/symonkipkemei/file-search.git`
 - $ git checkout develop
-- Run `python ceaser_cipher.py`
+- Run `python file-search.py`
 ```
 
-- [Live Version](https://replit.com/@symonkipkemei/ceaser-cipher#ceaser_cipher.py)
+- [Live Version](https://replit.com/@symonkipkemei/file-search#file-search.py)
 
 
 <ILLUSTRATIONS>
@@ -101,7 +101,7 @@ Contributions, issues and feature requests are always welcome!
 
 I love meeting other developers, interacting and sharing.
 
-Feel free to check the [issues page](https://github.com/symonkipkemei/ceaser-cipher/issues).
+Feel free to check the [issues page](https://github.com/symonkipkemei/file-search/issues).
 
 ### How to Contribute
 
@@ -109,10 +109,10 @@ To get a local copy up and running follow these simple example steps.
 
 ```
 - Fork the repository
-- git clone https://github.com/your_username/ceaser-cipher
+- git clone https://github.com/your_username/file-search
 - git checkout develop
 - git checkout -b branch name
-- git remote add upstream https://github.com/symonkipkemei/ceaser-cipher
+- git remote add upstream https://github.com/symonkipkemei/file-search
 - git pull upstream develop
 - git commit -m "commit message"
 - git push -u origin HEAD
