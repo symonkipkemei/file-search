@@ -4,7 +4,7 @@ import pathlib
 # list to store all images name
 image_list = []
 # file format you want to be searched
-file_type = ".png"
+file_type = ".rvt"
 
 ######  STARITING POINT ##########
 # declare the starting point
@@ -65,6 +65,28 @@ for level_1 in start_point_path_obj.iterdir():
                         if level_3.suffix == f"{file_type}":
                             level_3_name = level_3.name
                             image_list.append(level_2_path + '\\' + level_3_name)  
+                    else:
+
+                        # name of level 3 folders
+                        level_3_name = level_3.name
+        
+                        # path of level 2 folders
+                        level_3_path = level_2_path + '\\' + level_3_name
+        
+                        # create an object of pathlib.path project_path
+                        level_3_path_obj = pathlib.Path(level_3_path)
+
+                        #########  lEVEL 4 ##########
+
+                        for level_4 in level_3_path_obj.iterdir():
+
+                            if level_4.is_file():
+                                # check for images
+                                if level_4.suffix == f"{file_type}":
+                                    level_4_name = level_4.name
+                                    image_list.append(level_3_path + '\\' + level_4_name)  
+
+
 
 # print all images gathered
 for files in image_list:
